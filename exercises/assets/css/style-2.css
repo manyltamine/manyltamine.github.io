@@ -1,4 +1,5 @@
 /*  ============= WEB BROWSER RESETS ============ */
+body { background-color: antiquewhite }
 /* Desktops */
 @media (min-width: 768px) { body { padding: 4% 20% } }
 	
@@ -18,6 +19,7 @@ input, button, textarea, select { font: inherit }
 
 
 h1 {
+    color: brown;
     font-size: 72px;
     margin-bottom: 56px;
     text-align: center;
