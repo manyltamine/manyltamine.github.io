@@ -1,4 +1,4 @@
-*  ============= WEB BROWSER RESETS ============ */
+/*  ============= WEB BROWSER RESETS ============ */
 * { margin: 0; padding: 0; border: none }
 *, *::before, *::after { box-sizing: border-box }
 html { height: 100%; font: inherit; font-size: 100%; vertical-align: baseline;
@@ -8,7 +8,6 @@ min-height: 100vh; text-rendering: optimizeSpeed }
 img { width: 100%; height: auto; display: block }
 h1, h2, h3, h4 { width: 100% }
 input, button, textarea, select { font: inherit }
-
 
 /* ================= ENDS ================ */
 
@@ -68,4 +67,25 @@ img {
     margin-bottom: 42px;
     /* Drop shadow effect at right and bottom of image */
     box-shadow: 8px 10px 8px #888;    
+}
+
+/* ====== HYPERLINK STYLES ====== */
+            
+         
+/* Passive link styles */
+            
+a:link, a:visited {
+    text-decoration: none;
+    padding-bottom: 2px;
+    color: #000;
+    border-bottom: solid 2px #000;
+} 
+            
+/* Interactive link styles */
+            
+a:hover, a:focus, a:active {
+    text-decoration: none; 
+    padding-bottom: 2px;
+    color: #f26f21;
+    border-bottom: solid 2px blue;
 }
