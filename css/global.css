@@ -1,0 +1,93 @@
+/*  ============= WEB BROWSER RESETS ============ */
+* { margin: 0; padding: 0; border: none }
+*, *::before, *::after { box-sizing: border-box }
+html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
+scroll-behavior: smooth; scroll-padding-top: 20px }
+body { max-width: 1600px; line-height: 1.5; margin-left: auto; margin-right: auto; 
+min-height: 100vh; text-rendering: optimizeSpeed }  
+img { width: 100%; height: auto; display: block }
+h1, h2, h3, h4 { width: 100% }
+input, button, textarea, select { font: inherit }
+
+/* ================= ENDS ================ */
+
+/* Desktops */
+@media (min-width: 768px) { body { padding: 4% 20% } }
+	
+/* Mobiles */
+@media (max-width: 767px) { body { padding: 12% 8% } }
+
+body { 
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #f8f4e7;
+}
+
+h1 {
+    font-size: calc(42px + (78 - 42) * ((100vw - 320px) / (1600 - 320)));
+    font-weight: normal;
+    letter-spacing: -2px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: calc(28px + (42 - 28) * ((100vw - 320px) / (1600 - 320)));
+    letter-spacing: 6px;
+    margin-bottom: 48px;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1600 - 320)));
+    margin-top: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+img{
+    margin-bottom: 32px;
+    border-radius: 35px;
+}
+
+/* === Panel boxes === */
+.introduction-note-box { 
+    margin: 54px 0; /*  Only top and bottom margins have values */
+    padding: 16px; /* Same value on all four sides. */
+    border-style: solid; /* Same value on all four sides. */
+    border-width: 1px; /* All four borders have equal widths. */
+    border-color: #000; /* All four borders have same black color. */
+}
+
+/* Child sub-heading h3 inside panel boxes */
+.introduction-note-box h3 { 
+    font-family: 'Montserrat', sans-serif; /* Overrules h3 font-family value outside panel box. */
+    font-size: 20px; /* Overrules h3 font-size value outside panel box. */
+    margin-top: 0; /*  Overrules h3 margin-top value outside panel box. */
+    margin-bottom: 2px; /*  Overrules h3 margin-bottom value outside panel box. */
+    letter-spacing: 1px; /* New - just for h3 headings in panel boxes. */
+    text-transform: uppercase; /* New - just for h3 headings in panel boxes. */
+}
+
+/* Child paragraph p inside panel boxes */
+.introduction-note-box p { 
+    font-size: 18px; /* Overrules p font-size valueoutside panel box. */
+    line-height: 1.5; /* Overrules p line-height value outside panel box. */
+    margin-bottom: 0; /* Overrules p margin-bottom value outside panel box. */
+}
+
+ /* Panel box style 2 */
+ .introduction-note-box.box-style-introduction { 
+    padding: 16px 0 16px 0;
+    border-width: 8px 0 4px 0; /* Only top and bottom borders have width values */
+    border-color: #0782b3;
+ }
+ 
+ .introduction-note-box.box-style-introduction h3 { color: #044E6C }
+ .introduction-note-box.box-style-introduction p  { color: #044E6C }
